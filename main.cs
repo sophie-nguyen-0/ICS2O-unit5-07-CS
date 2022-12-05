@@ -15,9 +15,9 @@ class Program
         Console.WriteLine("this program calculates the sum of n natural numbers");
 
         Console.Write("Enter a number: ");
-        num1 = Convert.ToInt32(Console.ReadLine()) + 1;
+        num1 = Convert.ToInt32(Console.ReadLine());
 
-        for (int count = 1; count < num1; count++)
+        for (int count = 1; count < num1 || count == num1; count++)
         {
             sum += count;
         }
